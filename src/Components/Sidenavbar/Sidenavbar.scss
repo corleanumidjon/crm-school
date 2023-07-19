@@ -1,0 +1,115 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__input {
+    position: relative;
+    width: 300px;
+    height: 37px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 17px;
+    color: rgb(50, 50, 50);
+    border: 2px solid #d3d3d3;
+    border-radius: 1rem;
+  }
+  &__search {
+    position: relative;
+    top: 2px;
+    right: 33px;
+    font-size: 16px;
+    color: #d3d3d3;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+  }
+  &__logo {
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: initial;
+    border: none;
+    box-shadow: none;
+    &:hover {
+      color: #ffffff !important;
+    }
+  }
+  &__lang {
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    color: #808080;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &__display {
+    font-size: 20px;
+    color: #ffffff;
+    background-color: initial;
+    border: none;
+    cursor: pointer;
+  }
+  &__profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  &__profile-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #808080;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &__list-item {
+    color: #1976d2;
+    border-bottom: 1px solid;
+    &:nth-child(7) {
+      color: #ff0000;
+    }
+  }
+  &__icon {
+    font-size: xx-large;
+    color: #1976d2;
+    &-end {
+      font-size: xx-large;
+      color: #ff0000;
+    }
+  }
+}
+hr {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .header {
+    &__menu {
+      display: none !important;
+    }
+    &__input,
+    &__search {
+      display: none;
+    }
+    &__logo {
+      margin-left: -95px;
+    }
+  }
+}
